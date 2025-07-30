@@ -1,6 +1,6 @@
 # Multi-Agent System
 
-Многоагентная система для обработки сложных вопросов с использованием GigaChat + LangChain.
+Многоагентная система для обработки сложных вопросов.
 
 ## Файлы
 
@@ -20,7 +20,10 @@
 - **FAISS** - Векторная база данных для RAG
 
 ## Запуск
-
+```bash
+python app.py
+```
+или Docker
 ```bash
 # Создать .env файл с GIGACHAT_API_KEY=your_key
 docker-compose up -d
