@@ -31,6 +31,7 @@ unzip preprocessed_data.zip
 ```bash
 python rag.py
 ```
+Запустить приложение
 ```bash
 python app.py
 ```
