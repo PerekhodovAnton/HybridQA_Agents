@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  multi-agent-system:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: multi-agent-api
+    ports:
+      - "8000:8000"
+    environment:
+      - GIGACHAT_API_KEY=${GIGACHAT_API_KEY}
+    volumes:
+      # Монтируем данные для персистентности
+      - ./preprocessed_data:/app/preprocessed_data:ro
+      - ./cached_articles:/app/cached_articles
+      - ./my_index:/app/my_index:ro  # RAG индекс (если существует)
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    networks:
+      - multi-agent-network
+
+# Создаем сеть для приложения
+networks:
+  multi-agent-network:
+    driver: bridge
+
+# Опциональные volumes для персистентности данных
+volumes:
+  cached_articles:
+  preprocessed_data: 
