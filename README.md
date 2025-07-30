@@ -20,12 +20,12 @@
 - **FAISS** - Векторная база данных для RAG
 
 ## Запуск
+Создать .env файл с GIGACHAT_API_KEY=your_key
 ```bash
 python app.py
 ```
 или Docker
 ```bash
-# Создать .env файл с GIGACHAT_API_KEY=your_key
 docker-compose up -d
 ```
 
