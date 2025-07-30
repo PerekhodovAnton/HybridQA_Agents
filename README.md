@@ -21,7 +21,7 @@
 
 ## Запуск
 установить библиотеки requirements.txt\
-Создать .env файл с GIGACHAT_API_KEY=your_key
+Создать .env файл с GIGACHAT_API_KEY=your_key\
 в preprocessed_data/ скачать данные
 ```bash
 wget https://hybridqa.s3-us-west-2.amazonaws.com/preprocessed_data.zip
