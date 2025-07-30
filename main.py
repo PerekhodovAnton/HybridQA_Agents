@@ -638,7 +638,7 @@ class MultiAgentSystem:
         
         if isinstance(final_answer, str):
             direct_answer = final_answer
-            confidence = 0.8 if final_answer != "Ответ не найден" else 0.0
+            confidence = 0.8 if final_answer != "Ответ не найден" else 0.0 # TODO: change confidence
         
         return {
             "status": "success",
