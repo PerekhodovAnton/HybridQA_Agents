@@ -78,7 +78,12 @@ class AnalysisAgent:
                         Таблицы: {json.dumps(table_results, ensure_ascii=False, indent=2)}
                         Тексты: {json.dumps(text_results, ensure_ascii=False, indent=2)}
 
-                        Сформируй финальный ответ.
+                        Сформируй финальный ответ. Выведи только ответ и reasoning. В следующем формате:
+                        {{
+                            "answer": "ответ",
+                            "final_reasoning": "reasoning"
+                        }}
+                        Если нет ответа, выведи "No answer".
                         """
 
         messages = [

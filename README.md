@@ -5,10 +5,10 @@
 ## Файлы
 
 - `app.py` - FastAPI сервер с REST API
-- `main.py` - Логика многоагентной системы 
+- `main.py` - Логика многоагентной системы
 - `PlannerLLM.py` - Агент планирования рассуждения
 - `TableAgent.py` - Агент поиска в табличных данных
-- `rag.py` - RAG агент для поиска в текстах
+- `rag.py` - RAG агент для поиска контекста по статьям wiki
 - `AnalysisAgent.py` - Агент синтеза финального ответа
 - `preprocessed_data/` - JSON данные для работы системы
 
@@ -26,4 +26,4 @@
 docker-compose up -d
 ```
 
-API доступен по адресу: http://localhost:8000/docs 
+API доступен по адресу: http://localhost:8000/docs

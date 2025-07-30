@@ -6,10 +6,10 @@ from datetime import datetime
 import traceback
 
 # Импортируем всех агентов
-from PlannerLLM import PlannerLLM
-from TableAgent import TableToolAgent, load_json_data
-from rag import RetrievalAgent
-from AnalysisAgent import AnalysisAgent
+from src.PlannerLLM import PlannerLLM
+from src.TableAgent import TableToolAgent, load_json_data
+from src.RAG import RetrievalAgent
+from src.AnalysisAgent import AnalysisAgent
 
 
 class MultiAgentSystem:

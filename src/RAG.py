@@ -6,7 +6,7 @@ from typing import List, Dict, Any, Set, Tuple, Optional
 from collections import defaultdict
 import time
 from datetime import datetime
-from wiki_parser import fetch_wiki_intro
+from src.wiki_parser import fetch_wiki_intro
 from langchain_community.embeddings.gigachat import GigaChatEmbeddings
 from langchain_community.vectorstores import FAISS
 from langchain_core.documents import Document

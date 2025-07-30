@@ -5,7 +5,7 @@ from typing import List, Dict, Any, Optional
 import json
 import os
 import glob
-from wiki_parser import fetch_wiki_intro
+from src.wiki_parser import fetch_wiki_intro
 
 
 
