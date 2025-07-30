@@ -20,7 +20,7 @@
 - **FAISS** - Векторная база данных для RAG
 
 ## Запуск
-установить библиотеки requirements.txt
+установить библиотеки requirements.txt\
 Создать .env файл с GIGACHAT_API_KEY=your_key
 в preprocessed_data/ скачать данные
 ```bash
