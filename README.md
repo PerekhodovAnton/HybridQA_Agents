@@ -20,7 +20,17 @@
 - **FAISS** - Векторная база данных для RAG
 
 ## Запуск
+установить библиотеки requirements.txt
 Создать .env файл с GIGACHAT_API_KEY=your_key
+в preprocessed_data/ скачать данные
+```bash
+wget https://hybridqa.s3-us-west-2.amazonaws.com/preprocessed_data.zip
+unzip preprocessed_data.zip
+```
+чтобы создать индекс раскоментировать внизу rag.py и запустить
+```bash
+python rag.py
+```
 ```bash
 python app.py
 ```
